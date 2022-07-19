@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoEdit</title>
+    <script src="node_modules/lena.js/dist/browser.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+
+<body>
+    <header class="hider">
+        
+        
+        </div>
+
+        <div class="ideas">
+            <h4>PhotoEdit</h4>
+        </div>
+    </header>
+
+    <br>
+    <div class="contenedor">
+
+        <img class="edit" src="" id="imagen">
+        <div class="divicion"></div>
+        <canvas class="editfiltro" id="filtro"></canvas>
+
+    </div>
+    <br>
+
+    <div class="contenedor2">
+        <h3 class="ache1">Imagen sin editar</h3>
+    <button class="btncentral" onclick="getImage()">Generar imagen</button>
+        <h3 class="ache2">Imagen editada</h3>
+
+    </div>
+    <br>
+    
+        <div class="allbotones">
+        <button class="btnx" onclick="filtros(`green`)">Green</button>
+        <button class="btnx" onclick="filtros(`red`)">Red</button>
+        <button class="btnx" onclick="filtros(`blue`)">Blue</button>
+        <button class="btnx" onclick="filtros(`grayscale`)">Gris</button>
+        <button class="btnx" onclick="filtros(`sepia`)">Sepia</button>
+        <button class="btnx" onclick="filtros(`invert`)">Invert</button>
+        <button class="btnx" onclick="filtros(`saturation`)">Saturation</button>
+        <button class="btnx" onclick="filtros(`mirror`)">Mirror</button>
+        <button class="btnx" onclick="filtros(`roberts`)">Roberts</button>
+        <button class="btnx" onclick="filtros(`sharpen`)">Sharpen</button>
+        <button class="btnx" onclick="filtros(`sobelVertical`)">SobelY</button>
+        <button class="btnx" onclick="filtros(`sobelHorizontal`)">SobelX</button>
+        <button class="btnx" onclick="filtros(`gaussian`)">Gaussian</button>
+        <button class="btnx" onclick="filtros(`canny`)">Canny</button>
+        <button class="btnx" onclick="filtros(`noise`)">Noise</button>
+    
+    </div>
+
+    <script src="funciones.js"></script>
+
+    <footer>
+
+        <br>
+        <p class="futer1">©2022-2022-Todos los derechos reservados</p>
+        <p>Pagina creada por:</p>
+        
+        <p class="futer1">Robinson Calle</p>
+        <br>
+
+    </footer>
+
+    
+</body>
+</html>
