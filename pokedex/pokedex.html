@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Pokedex</title>
+    
+</head>
+
+<body onload = "verPokemon()">
+
+
+    <header class="hider">
+
+    </header>
+
+        <br>
+
+            <div class="contenedor">
+
+
+                    <div class="carta">
+
+                            <h2>Normal</h2> 
+                            <img class="poke" id="img">
+                        
+                            <h2>Shiny</h2> 
+                            <img class="poke" id="img2">
+                        
+                            <p id="text"></p> 
+                            <p id="tipo"></p> 
+                            <p id="text2"></p> 
+                            <p id="text3"></p> 
+                            <p id="text4"></p> 
+                            <p id="text5"></p>
+
+                    </div>
+
+            </div>
+                <br>
+                <br>
+
+
+                <div class="contenedor2">
+
+                        <input class="boton" min="1" max="807" type="number" id="num" onchange="verPokemon()">
+            
+                </div>
+
+                        <script src="operacion.js"></script>
+
+                        <footer class="futer">
+                            <h1>sisoi</h1>
+                        </footer>
+
+
+</body>
+</html>

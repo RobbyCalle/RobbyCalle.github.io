@@ -1,0 +1,107 @@
+body{
+    background-color: #060047;
+}
+.hider{
+    background-color: #4e00c2;
+    height: 100px;
+    width: 100%;
+}
+.contenedor{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+h2{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+.poke{
+    height: 120px;
+    width: 160px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.boton {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    min-width: 130px;
+    height: 40px;
+    color: #060047;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid #E601A2;
+    background: #E601A2;
+  }
+  .boton:hover {
+    background: #060047;
+    color: #E601A2
+  }
+
+.contenedor2{
+    background-color: #060047;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 100deg;
+    inherits: false;
+}
+  
+.carta {
+    background: black;
+    width: 400px;
+    height: 630px;
+    padding: 3px;
+    position: relative;
+    border-radius: 6px  
+    
+}
+  
+.carta::before {
+    content: "";
+    width: 104%;
+    height: 104%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #D022FF, #E601A2 40%, #4e00c2);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+} 
+  
+@keyframes spin {
+    0% {
+      --rotate: 10deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+}
+
+.futer{
+    background-color: #4e00c2;
+    width: 100%;
+    height: 100%;
+    
+}
