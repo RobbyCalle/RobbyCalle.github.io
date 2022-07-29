@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="funciones/operaciones.js"></script>
+    <link rel="stylesheet" href="/trivia/estilos/style.css">
+</head>
+<body onload="ocultar()">
+    
+    <audio id="audioFeliz" src="/trivia/sonidos/feliz.m4a"></audio>
+    <audio id="audioFelizCorto" src="/trivia/sonidos/felizcorto.m4a"></audio>
+    <audio id="audioTriste" src="/trivia/sonidos/triste.m4a"></audio>
+    <audio id="audioTristeCorto" src="/trivia/sonidos/tristecorto.m4a"></audio>
+
+    
+<div class="start1">
+    <img id="imgIniciar" src="/trivia/images/nombreJuego.jpg" alt="">
+    <div class="start">
+        <button class="boton1" id="btnIniciar" onclick="mostrarPreguntas()">Iniciar</button>
+    </div>
+</div>
+            
+                <div class="contenedor">
+                    <h2 class="puntaje" id="puntos"></h2>
+                </div>
+          
+
+                    <div class="centerImg">
+                        <img class="imagenes" src="" id="imagen1">
+                    </div>
+                            <div class="centerboton">
+                                <h1 id="pregunta1" ></h1>
+                            </div>
+                                <div class="centerboton">
+                                    <button class="boton" id="respuesta1-1" onclick="validarRespuesta1(this.value)"></button>
+                                    <button class="boton" id="respuesta2-1" onclick="validarRespuesta1(this.value)"></button>
+                                    <button class="boton" id="respuesta3-1" onclick="validarRespuesta1(this.value)"></button>
+                                    <button class="boton" id="respuesta4-1" onclick="validarRespuesta1(this.value)"></button>
+                                </div>
+
+                    <div class="centerImg">
+                        <img class="imagenes" src="" id="imagen2">
+                    </div>
+                            <div class="centerboton">
+                                <h1 id="pregunta2"></h1>
+                            </div>
+                                <div class="centerboton">
+                                    <button class="boton" id="respuesta1-2" onclick="validarRespuesta2(this.value)"></button>
+                                    <button class="boton" id="respuesta2-2" onclick="validarRespuesta2(this.value)"></button>
+                                    <button class="boton" id="respuesta3-2" onclick="validarRespuesta2(this.value)"></button>
+                                    <button class="boton" id="respuesta4-2" onclick="validarRespuesta2(this.value)"></button>
+                                </div>
+                    <div class="centerImg">
+                        <img class="imagenes" src="" id="imagen3">
+                    </div>
+                            <div class="centerboton">
+                                <h1 id="pregunta3"></h1>
+                            </div>
+                                <div class="centerboton">
+                                    <button class="boton" id="respuesta1-3"  onclick="validarRespuesta3(this.value)"></button>
+                                    <button class="boton" id="respuesta2-3"  onclick="validarRespuesta3(this.value)"></button>
+                                    <button class="boton" id="respuesta3-3"  onclick="validarRespuesta3(this.value)"></button>
+                                    <button class="boton" id="respuesta4-3"  onclick="validarRespuesta3(this.value)"></button>
+                                </div>
+                    <div class="centerImg">
+                        <img class="imagenes" src="" id="imagen4">
+                    </div>
+                            <div class="centerboton">
+                                <h1 id="pregunta4"></h1>
+                            </div>
+                                <div class="centerboton">
+                                    <button class="boton" id="respuesta1-4" onclick="validarRespuesta4(this.value)"></button>
+                                    <button class="boton" id="respuesta2-4" onclick="validarRespuesta4(this.value)"></button>
+                                    <button class="boton" id="respuesta3-4" onclick="validarRespuesta4(this.value)"></button>
+                                    <button class="boton" id="respuesta4-4" onclick="validarRespuesta4(this.value)"></button>
+                                </div>
+                    <div class="centerImg">
+                        <img class="imagenes" src="" id="imagen5">
+                    </div>
+                            <div class="centerboton">
+                                <h1 id="pregunta5"></h1>
+                            </div>
+                                <div class="centerboton">
+                                
+                                    <button class="boton" id="respuesta1-5" onclick="validarRespuesta5(this.value)"></button>
+                                    <button class="boton" id="respuesta2-5" onclick="validarRespuesta5(this.value)"></button>
+                                    <button class="boton" id="respuesta3-5" onclick="validarRespuesta5(this.value)"></button>
+                                    <button class="boton" id="respuesta4-5" onclick="validarRespuesta5(this.value)"></button>
+                                </div>
+
+                                
+
+                                <div class="centerImg"> 
+
+                                    <svg id="animacionFeliz" class="feliz">
+                                        <g transform="translate(10,10)">
+                                            <rect x="10" y="100" width="400" height="1" fill="white"/>
+                                            <rect x="100" y="10" width="420" height="3" fill="white"/>
+                                            <rect x="30" y="130" width="200" height="2" fill="white"/>
+                                            <rect x="1" y="210" width="50" height="3" fill="white"/>
+                                            <rect x="480" y="210" width="50" height="1" fill="white"/>
+                                            <rect x="144" y="270" width="260" height="3" fill="white"/>
+                                            <rect x="204" y="170" width="260" height="1" fill="white"/>
+                                            <rect x="74" y="150" width="260" height="2" fill="white"/>
+                                            <rect x="24" y="50" width="60" height="1" fill="white"/>
+                                            <rect x="414" y="50" width="60" height="2" fill="white"/>
+                                            <rect x="0" y="280" width="60" height="3" fill="white"/>
+                                            <animateMotion path="M 100 0 L 30 15" dur="3s"  repeatCount="indefinite" />
+                                        </g>
+                                        
+                                        <rect x="190" y="40" width="220" height="220" fill="black"/>
+                                        <rect x="200" y="50" width="200" height="200" fill="yellow"/>
+                                        <rect x="200" y="100" width="200" height="20" fill="black"/>
+                                        <rect x="210" y="120" width="80" height="30" fill="black"/>
+                                        <rect x="220" y="120" width="60" height="40" fill="black"/>
+                                        <rect x="310" y="120" width="80" height="30" fill="black"/>
+                                        <rect x="320" y="120" width="60" height="40" fill="black"/>
+                                        <rect x="220" y="120" width="20" height="10" fill="white"/>
+                                        <rect x="220" y="120" width="10" height="20" fill="white"/>
+                                        <rect x="320" y="120" width="20" height="10" fill="white"/>
+                                        <rect x="320" y="120" width="10" height="20" fill="white"/>
+                                        <rect x="190" y="200" width="20" height="60" fill="#00D3FA"/>
+                                        <rect x="210" y="240" width="20" height="20" fill="#00D3FA"/>
+                                        <rect x="220" y="240" width="10" height="10" fill="black"/>
+                                        <rect x="210" y="220" width="10" height="20" fill="black"/>
+                                        <rect x="200" y="200" width="10" height="20" fill="black"/>
+                                        <rect x="260" y="210" width="80" height="20" fill="black"/>
+                                        <rect x="340" y="190" width="20" height="20" fill="black"/>
+                                        <rect x="369" y="250" width="20" height="20" fill="#00D3FA"/>
+                                        <rect x="390" y="200" width="20" height="60" fill="#00D3FA"/>
+                                        <rect x="380" y="240" width="20" height="20" fill="#00D3FA"/>
+                                        <rect x="370" y="240" width="10" height="10" fill="black"/>
+                                        <rect x="380" y="220" width="10" height="20" fill="black"/>
+                                        <rect x="390" y="200" width="10" height="20" fill="black"/>
+                                        <rect x="190" y="40" width="20" height="60" fill="#00D3FA"/>
+                                        <rect x="210" y="40" width="30" height="20" fill="#00D3FA"/>
+                                        <rect x="220" y="50" width="20" height="10" fill="black"/>
+                                        <rect x="210" y="60" width="10" height="20" fill="black"/>
+                                        <rect x="200" y="80" width="10" height="20" fill="black"/>
+                                        <rect x="390" y="40" width="20" height="60" fill="#00D3FA"/>
+                                        <rect x="360" y="40" width="30" height="20" fill="#00D3FA"/>
+                                        <rect x="360" y="50" width="20" height="10" fill="black"/>
+                                        <rect x="380" y="60" width="10" height="20" fill="black"/>
+                                        <rect x="390" y="80" width="10" height="20" fill="black"/>
+                                        <g transform="translate(10,10)">
+                                            <text id="TexElement" x="120" y="160" stroke="white"  color="white" style="font-family:Verdana;  font-size:70">!Ganaste!</text>
+                                            <animateMotion path="M 0 100 L 0 0" dur="3s" fill="white" repeatCount="indefinite" />
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="centerImg"> 
+                                    <svg id="animacionTriste" class="triste">
+                                        <rect x="190" y="40" width="220" height="220" fill="black"/>
+                                        <rect x="200" y="50" width="200" height="200" fill="yellow"/>                         
+                                        <rect x="230" y="100" width="60" height="40" fill="black"/>
+                                        <rect x="330" y="90" width="40" height="60" fill="black"/>         
+                                        <rect x="240" y="90" width="40" height="60" fill="black"/>
+                                        <rect x="320" y="100" width="60" height="40" fill="black"/>
+                                        <rect x="360" y="110" width="10" height="20" fill="white"/>
+                                        <rect x="350" y="110" width="20" height="10" fill="white"/>
+                                        <rect x="270" y="110" width="10" height="20" fill="white"/>
+                                        <rect x="260" y="110" width="20" height="10" fill="white"/>
+                                        <rect x="270" y="180" width="50" height="10" fill="black"/>
+                                        <rect x="260" y="190" width="10" height="20" fill="black"/>
+                                        <rect x="320" y="190" width="10" height="20" fill="black"/>
+                                        <rect x="190" y="200" width="20" height="60" fill="#7E028A"/>
+                                        <rect x="210" y="240" width="20" height="20" fill="#7E028A"/>
+                                        <rect x="220" y="240" width="10" height="10" fill="black"/>
+                                        <rect x="210" y="220" width="10" height="20" fill="black"/>
+                                        <rect x="200" y="200" width="10" height="20" fill="black"/>
+                                        <rect x="369" y="250" width="20" height="20" fill="#7E028A"/>
+                                        <rect x="390" y="200" width="20" height="60" fill="#7E028A"/>
+                                        <rect x="380" y="240" width="20" height="20" fill="#7E028A"/>
+                                        <rect x="370" y="240" width="10" height="10" fill="black"/>
+                                        <rect x="380" y="220" width="10" height="20" fill="black"/>
+                                        <rect x="390" y="200" width="10" height="20" fill="black"/>
+                                        <rect x="190" y="40" width="20" height="60" fill="#7E028A"/>
+                                        <rect x="210" y="40" width="30" height="20" fill="#7E028A"/>
+                                        <rect x="220" y="50" width="20" height="10" fill="black"/>
+                                        <rect x="210" y="60" width="10" height="20" fill="black"/>
+                                        <rect x="200" y="80" width="10" height="20" fill="black"/>
+                                        <rect x="390" y="40" width="20" height="60" fill="#7E028A"/>
+                                        <rect x="360" y="40" width="30" height="20" fill="#7E028A"/>
+                                        <rect x="360" y="50" width="20" height="10" fill="black"/>
+                                        <rect x="380" y="60" width="10" height="20" fill="black"/>
+                                        <rect x="390" y="80" width="10" height="20" fill="black"/>
+
+                                        <g transform="translate(10,10)">
+                                            <rect x="20" y="0" width="1" height="54" fill="white"/>
+                                            <rect x="150" y="0" width="2" height="100" fill="white"/>
+                                            <rect x="500" y="60" width="3" height="80" fill="white"/>
+                                            <rect x="100" y="10" width="2" height="130" fill="white"/>
+                                            <rect x="550" y="20" width="1" height="100" fill="white"/>
+                                            <rect x="100" y="10" width="2" height="130" fill="white"/>
+                                            <rect x="400" y="180" width="2" height="30" fill="white"/>
+                                            <rect x="420" y="50" width="3" height="80" fill="white"/>
+                                        
+                                            <animateMotion path="M 10 0 L 10 110" dur="3s"  repeatCount="indefinite" />
+                                            
+                                        </g>
+                                        <g transform="translate(10,10)">
+                                            <rect x="220" y="100" width="20" height="20" fill="skyblue"/>
+                                            <rect x="320" y="100" width="20" height="20" fill="skyblue"/>
+                                            <rect x="220" y="160" width="20" height="20" fill="skyblue"/>
+                                            <rect x="320" y="180" width="20" height="20" fill="skyblue"/>
+                                            <animateMotion path="M 10 0 L 10 110" dur="3s"  repeatCount="indefinite" />
+                                        </g>
+
+                                        <rect x="200" y="280" width="200" height="20" fill="skyblue"/>
+                                        <rect x="180" y="290" width="240" height="10" fill="skyblue"/>
+                                        
+                                        <g transform="translate(10,10)">
+                                            <text id="TexElement" x="120" y="160" stroke="white"  color="white" style="font-family:Verdana;  font-size:70">!Perdiste!</text>
+                                            <animateMotion path="M 0 100 L 0 0" dur="3s" fill="white" repeatCount="indefinite" />
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                            <div class="centerboton">
+                                                <button class="boton" onclick="reiniciar();">reiniciar</button>
+                                            </div>
+                
+</body>
+</html>

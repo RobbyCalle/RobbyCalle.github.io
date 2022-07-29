@@ -1,0 +1,136 @@
+.feliz{
+    background-color: #00D3FA;
+    height: 300px;
+    width: 600px;
+    box-shadow: 0px 0px 10px 0px white;
+    margin-top: 60px;
+    border-radius: 30px;
+}
+.triste{
+    background-color: #7E028A;
+    height: 300px;
+    width: 600px;
+    box-shadow: 0px 0px 10px 0px white;
+    margin-top: 60px;
+    border-radius: 30px;
+}
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #241810;
+   
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+    border-radius: 0px 0px 400px 400px;
+    
+}
+body{
+    background-image: url(/trivia/images/fondoJuego.jpg);
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+.start1{
+    background-color: #241810;
+    border-radius: 0px 0px 40px 40px;
+    box-shadow: 0px 0px 50px 0px white;
+}
+.start1 img{
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    background-color: #967102;
+    color: white;
+    font-weight: bold;
+    width: 80%;
+    border-radius: 40px 40px 0px 0px;
+    padding: 15px 10px 15px 10px;
+    box-shadow: 0px 0px 10px 0px white;
+}
+.boton {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    min-width: 130px;
+    height: 45px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #b48d03;
+    margin: 10px;
+    
+}
+  .boton:hover {
+    background-color: #967102 ;
+}
+.boton1 {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    min-width: 130px;
+    height: 45px;
+    color: #fff000;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background:  #e69314;
+    margin: 10px;
+    
+}
+  .boton1:hover {
+    background-color: #dd6829;
+}
+.centerboton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.imagenes{
+    box-shadow: 0px 0px 10px 0px white;
+    margin-top: 60px;
+    border-radius: 30px;
+}
+.centerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contenedor {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  .puntaje {
+    min-width: 130px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 4px 0px 0px 0px;
+  }
+  .puntaje {
+    background: white;
+    color: black;
+  }
